@@ -264,7 +264,7 @@ div {
     content: '';
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid white;
+    border-bottom: 20px solid #f9f9f9;
 }
 
 .dropdown-content a {
