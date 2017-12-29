@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Torrent site clone :/ by Daniel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg w-100 ">
+        <a class="navbar-brand" href="#">
+            <img src="utorrent.png" height="30px" alt="logo">
+        </a>
+
+        <span class='hamburger-icon' onClick="toggleMenu()">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </span>
+
+
+        <div class="collapse navbar-collapse justify-content-end mainmenu" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item slideDown dropdown">
+
+                    <a class="nav-link dropbtn" href="#"> PRODUCTS </a>
+                    <div class="dropdown-content">
+                            <a href="#">Pro</a>
+                            <a href="#">Mobile</a>
+                            <a href="#">Remote</a>
+                          </div>
+                </li>
+                <li class="nav-item slideDown">
+                    <a class="nav-link" href="#"> COMMUNITY </a>
+                </li>
+                <li class="nav-item slideDown">
+                    <a class="nav-link" href="#"> BLOG </a>
+                </li>
+                <li class="nav-item slideDown">
+                    <a class="nav-link changelang" id="changelang" onClick="showLanguageMenu()" href="#"> LANGUAGE
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+    </nav>
+    <div class="modal languagemodal">
+        <div class="modalbackground" onClick="hideLanguageMenu()"></div>
+        <div class="modalcontent mx-auto d-blocks">
+
+            <div class="p-1" id="languages">
+                <div class="modal-header h5 bg-dark m-0 text-light"> Choose a language </div>
+                <div class="modal-contents  bg-white p-2 ">
+                    <hr class='bg-dark' />
+                    <ul>
+                        <li class="h4">
+                            <a href="#" class="p-2  px-5 badge  badge-dark" onClick="hideLanguageMenu()">Serbian</a>
+                        </li>
+                        <li class="h4">
+                            <a href="#" class="p-2   px-5  badge  badge-dark" onClick="hideLanguageMenu()">English</a>
+                        </li>
+                        <li class="h4">
+                            <a href="#" class="p-2  px-5  badge  badge-dark" onClick="hideLanguageMenu()">Italian</a>
+                        </li>
+                        <li class="h4">
+                            <a href="#" class="p-2   px-5  badge  badge-dark" onClick="hideLanguageMenu()">French</a>
+                        </li>
+                    </ul>
+                    <a class='underlined-link text-dark text-center' onClick="hideLanguageMenu()">
+                        <u>Click here to close.</u>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main fadeIn m-0">
+        <div class="container text-center">
+
+            <h2 class='h2 head-title'> You've just been upgraded to uTorrent version 3.5.0.1.44294!</h2>
+            <p> Every few weeks, we release a new version with improvements.
+                <br/> This is where we’ll tell you about them. </p>
+            <p>
+                Thank you for being part of our user base and community. </p>
+        </div>
+        <hr/>
+        <div class="row justify-content-center text-center">
+            <div class="col-sm">
+                <img class="jmb-img" src="item1.png" alt="">
+                <p>Learn more about uTorrent!
+                    <br> Check out our blog.</p>
+            </div>
+            <div class="col-sm">
+                <img class="jmb-img" src="item2.png" alt="">
+                <p>If you’re looking for a way to torrent on
+                    <br> Android, try our amazing, 4.5 star, app.</p>
+            </div>
+            <div class="col-sm">
+                <img class="jmb-img" src="item3.png" alt="">
+                <p>Try us without ads!
+                    <br> Go ad-free.</p>
+            </div>
+        </div>
+        <br/>
+        <img src="GOOGLEPLAY.png" class="mx-auto d-block" alt="">
+        <hr/>
+        <p class="h2 newversion text-center">Here’s
+            <a href="#" id="changelog"> what’s new</a> in this version.</p>
+
+
+    </div>
+
+    <footer>
+        <div class="footer p-4 m-0">
+            <div class="row justify-content-center">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <p class="h5">Other</p>
+                    <a class="nav-link mx-auto d-block text-center changelang" href="#" onClick="showLanguageMenu()"> LANGUAGE</a>
+                    <div class="social justify-content-center text-center"></div>
+                    <a href="http://twitter.com/utorrent" target="_blank">
+                        <i class="fa fa-twitter fa-2x m-1"></i>
+                    </a>
+                    <a href="http://www.facebook.com/pages/uTorrent/123388254363684" target="_blank">
+                        <i class="fa fa-facebook fa-2x m-1"></i>
+                    </a>
+                    <a href="http://instagram.com/utorrent" target="_blank">
+                        <i class="fa fa-instagram fa-2x m-1"></i>
+                    </a>
+                </div>
+                <div class="col-sm">
+                    <p class="h5">Download </p>
+                    <ul>
+                        <li>
+                            <a href="#">Windows</a>
+                        </li>
+                        <li>
+                            <a href="#">Mac</a>
+                        </li>
+                        <li>
+                            <a href="#">Linux</a>
+                        </li>
+                        <li>
+                            <a href="#">Mobile</a>
+                        </li>
+                        <li>
+                            <a href="#">Remote</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <p class="h5">Company</p>
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">EULA</a>
+                        </li>
+                        <li>
+                            <a href="#">Copyright</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#">Advertise</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <p class="h5">Help</p>
+                    <ul>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">Forums</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-sm"></div>
+
+            </div>
+            <p class="copyright text-center">© 2017BitTorrent, Inc.µTorrent is a trademark of BitTorrent, Inc.</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
